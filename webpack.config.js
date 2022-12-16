@@ -20,6 +20,9 @@ module.exports = {
     },
     resolve: {
         extensions: ['.js', '.jsx', '.json'],
+        alias: {
+            "@": path.join(__dirname, 'src/')
+        },
     },
     module: {
         rules: [

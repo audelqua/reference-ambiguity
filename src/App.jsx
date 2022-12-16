@@ -1,5 +1,5 @@
 import React from 'react'
-import ChildComponent from './components/ChildComponent'
+import ChildComponent from '@/components/ChildComponent'
 
 const App = () => {
     return (
