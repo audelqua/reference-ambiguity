@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
-const ChildComponent = () => {
+const ChildComponent = ({targetObject, text}) => {
+    console.log('targetObject', targetObject);
+    const [state, setState] = useState(targetObject)
+    // console.log('state', state);
+    console.log('re-rendered', state);
+
+    // useEffect(() => {
+    //     setState(targetObject)
+    // }, [targetObject])
     return (
         <div>
-            hello world im the child one
+            <span>______{text}_______</span>
         </div>
     )
 }
